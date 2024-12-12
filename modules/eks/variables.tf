@@ -9,11 +9,6 @@ variable "cluster_name" {
   type        = string
   default     = "sharing-fish-eks-cluster"
 }
-variable "cluster_version" {
-  description = "The version of the EKS cluster"
-  type        = string
-}
-
 variable "vpc_id" {
   description = "The ID of the VPC"
   type        = string
