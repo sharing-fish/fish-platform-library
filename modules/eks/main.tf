@@ -12,8 +12,8 @@ module "eks" {
   cluster_name    = var.cluster_name
   cluster_version = "1.30"
 
-  vpc_id     = dependency.vpc.vpc_id
-  subnet_ids = dependency.vpc.private_subnets
+  vpc_id     = var.vpc_id
+  subnet_ids = var.subnet_ids
 
   eks_managed_node_group_defaults = {
     ami_type = "AL2_ARM_64"
