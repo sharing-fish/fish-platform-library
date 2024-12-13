@@ -1,6 +1,3 @@
-# Copyright (c) HashiCorp, Inc.
-# SPDX-License-Identifier: MPL-2.0
-
 provider "aws" {
   region = var.region
 }
@@ -16,7 +13,7 @@ module "eks" {
   subnet_ids = var.subnet_ids
 
   eks_managed_node_group_defaults = {
-    ami_type = "AL2_ARM_64"
+    ami_type = "AL2_x86_64"
   }
 
   eks_managed_node_groups = {
