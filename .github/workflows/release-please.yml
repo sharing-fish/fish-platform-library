@@ -19,7 +19,7 @@ jobs:
       id: octo-sts
       with:
         scope: sharing-fish
-        identity: deploy-main
+        identity: library-main
 
     - uses: googleapis/release-please-action@v4
       with:
