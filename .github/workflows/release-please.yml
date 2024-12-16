@@ -27,7 +27,7 @@ jobs:
         terraform: latest
 
     - name: Format Terraform files
-      run: terraform fmt -recursive
+      run: terraform fmt -recursive -check
 
     - uses: googleapis/release-please-action@v4
       with:
