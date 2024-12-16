@@ -1,26 +1,14 @@
-resource "kubernetes_config_map" "aws_auth" {
-  depends_on = [module.eks]
+output "cluster_endpoint" {
+  description = "The endpoint for the EKS cluster"
+  value       = module.eks.cluster_endpoint
+}
 
-  metadata {
-    name      = "aws-auth"
-    namespace = "kube-system"
-  }
+output "cluster_certificate_authority_data" {
+  description = "The certificate authority data for the EKS cluster"
+  value       = module.eks.cluster_certificate_authority_data
+}
 
-  data = {
-    mapRoles = jsonencode([
-      {
-        rolearn  = aws_iam_role.eks_role.arn
-        username = "eks-role"
-        groups   = ["system:masters"]
-      }
-    ])
-
-    mapUsers = jsonencode([
-      {
-        userarn  = aws_iam_user.eks_user.arn
-        username = "eks-user"
-        groups   = ["system:masters"]
-      }
-    ])
-  }
+output "cluster_token" {
+  description = "The authentication token for the EKS cluster"
+  value       = data.aws_eks_cluster_auth.cluster.token
 }
