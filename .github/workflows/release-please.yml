@@ -21,6 +21,14 @@ jobs:
         scope: sharing-fish
         identity: library-main
 
+    - name: Install Terraform and Terragrunt
+      uses: alexellis/arkade-get@493cf9387f80dcbf8a85786c55e04de45c927a5c
+      with:
+        terraform: latest
+
+    - name: Format Terraform files
+      run: terraform fmt -recursive
+
     - uses: googleapis/release-please-action@v4
       with:
         token: ${{ steps.octo-sts.outputs.token }}
