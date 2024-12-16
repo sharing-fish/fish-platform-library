@@ -39,14 +39,6 @@ module "eks" {
   }
 }
 
-data "aws_eks_cluster" "cluster" {
-  name = module.eks.cluster_id
-}
-
-data "aws_eks_cluster_auth" "cluster" {
-  name = module.eks.cluster_id
-}
-
 resource "aws_iam_user" "eks_user" {
   name = "eks-user"
 }
@@ -73,11 +65,25 @@ resource "aws_iam_role" "eks_role" {
   })
 }
 
+resource "aws_iam_role_policy" "eks_role_policy" {
+  name   = "eks-role-policy"
+  role   = aws_iam_role.eks_role.id
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Effect = "Allow"
+        Action = "sts:AssumeRole"
+        Resource = "*"
+      }
+    ]
+  })
+}
+
 resource "aws_iam_role_policy_attachment" "eks_role_attach_policy" {
   role       = aws_iam_role.eks_role.name
   policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
 }
-
 resource "kubernetes_config_map" "aws_auth" {
   depends_on = [module.eks]
 
