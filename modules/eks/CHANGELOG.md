@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/sharing-fish/fish-platform-library/compare/v0.2.0...v0.2.1) (2024-12-16)
+
+
+### Bug Fixes
+
+* fixed bad copy paste ([22336ae](https://github.com/sharing-fish/fish-platform-library/commit/22336aee7c2e391931919a2c77d65688d622452f))
+
 ## [0.2.0](https://github.com/sharing-fish/fish-platform-library/compare/v0.1.2...v0.2.0) (2024-12-16)
 
 
