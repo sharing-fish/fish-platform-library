@@ -8,12 +8,12 @@ variable "cluster_endpoint" {
   type        = string
 }
 
-variable "cluster_certificate_authority_data" {
+variable "cluster_ca_cert" {
   description = "The certificate authority data for the EKS cluster"
   type        = string
 }
 
-variable "cluster_token" {
-  description = "The authentication token for the EKS cluster"
+variable "cluster_name" {
+  description = "The name of the EKS cluster"
   type        = string
 }
