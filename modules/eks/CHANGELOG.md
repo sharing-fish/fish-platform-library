@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.2](https://github.com/sharing-fish/fish-platform-library/compare/v0.2.1...v0.2.2) (2024-12-17)
+
+
+### Bug Fixes
+
+* added missing aws cluster data blocks ([b05d701](https://github.com/sharing-fish/fish-platform-library/commit/b05d701ef96cbefb73d21bcb7acc46fd85aeae39))
+* iam not happy ([0649df8](https://github.com/sharing-fish/fish-platform-library/commit/0649df8142f4f6f87990872ca7bedf26a7967869))
+
 ## [0.2.1](https://github.com/sharing-fish/fish-platform-library/compare/v0.2.0...v0.2.1) (2024-12-16)
 
 

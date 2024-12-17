@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.0](https://github.com/sharing-fish/fish-platform-library/compare/v0.2.1...v0.3.0) (2024-12-17)
+
+
+### Features
+
+* argocd and namespace- still needs to be tested, needs tg in deploy repo ([8fe3d0a](https://github.com/sharing-fish/fish-platform-library/commit/8fe3d0a5bda2b1cdc88884fbbd060713bcedb321))
+
+
+### Bug Fixes
+
+* added missing aws cluster data blocks ([b05d701](https://github.com/sharing-fish/fish-platform-library/commit/b05d701ef96cbefb73d21bcb7acc46fd85aeae39))
+* iam not happy ([0649df8](https://github.com/sharing-fish/fish-platform-library/commit/0649df8142f4f6f87990872ca7bedf26a7967869))
+
 ## [0.2.1](https://github.com/sharing-fish/fish-platform-library/compare/v0.2.0...v0.2.1) (2024-12-16)
 
 
