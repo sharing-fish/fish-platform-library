@@ -1,6 +1,6 @@
 {
   ".": "0.3.0",
-  "modules/eks": "0.2.2",
+  "modules/eks": "0.3.0",
   "modules/vpc": "0.1.0",
   "modules/argocd": "0.3.0"
 }
