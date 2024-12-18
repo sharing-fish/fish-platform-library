@@ -2,7 +2,7 @@
   "packages": {
     ".": {
       "changelog-path": "CHANGELOG.md",
-      "release-type": "terraform-module",
+      "release-type": "simple",
       "bump-minor-pre-major": false,
       "bump-patch-for-minor-pre-major": false,
       "draft": false,
@@ -18,7 +18,7 @@
         "release-type": "terraform-module"
       },
       "applications/metrics-server": {
-        "release-type": "helm",
+        "release-type": "simple",
         "version": "0.7.2"
       }
   },
