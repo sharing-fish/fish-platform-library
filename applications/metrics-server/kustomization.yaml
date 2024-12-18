@@ -3,4 +3,3 @@ kind: Kustomization
 
 resources:
   - https://github.com/kubernetes-sigs/metrics-server/deploy/kubernetes?ref=v0.7.2
-  
