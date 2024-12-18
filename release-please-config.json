@@ -1,15 +1,19 @@
 {
     "packages": {
       "module/argocd": {
+        "release-type": "terraform",
         "draft": "false"
       },
       "module/eks": {
+        "release-type": "terraform",
         "draft": "false"
       },
       "module/vpc": {
+        "release-type": "terraform",
         "draft": "false"
       },
       "applications/metrics_server": {
+        "release-type": "simple",
         "draft": "false"
       }
     }
