@@ -7,7 +7,6 @@ variable "region" {
 variable "cluster_name" {
   description = "Desired EKS cluster name"
   type        = string
-  default     = "sharing-fish-eks-cluster"
 }
 variable "vpc_id" {
   description = "The ID of the VPC"

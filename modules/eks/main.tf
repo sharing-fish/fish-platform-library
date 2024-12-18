@@ -48,7 +48,7 @@ module "eks" {
 
       policy_associations = {
         cli-user-admin = {
-          policy_arn = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSAdminPolicy"
+          policy_arn = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy"
           access_scope = {
             type       = "cluster"
           }
@@ -61,7 +61,7 @@ module "eks" {
 
       policy_associations = {
         pipeline-admin = {
-          policy_arn = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSAdminPolicy"
+          policy_arn = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy"
           access_scope = {
             type       = "cluster"
           }
@@ -70,64 +70,3 @@ module "eks" {
     }
   }
 }
-
-# # iam role and user to access the cluster
-# resource "aws_iam_user" "eks_user" {
-#   name = "eks-user"
-# }
-
-# resource "aws_iam_user_policy_attachment" "eks_user_attach_policy" {
-#   user       = aws_iam_user.eks_user.name
-#   policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
-# }
-
-# resource "aws_iam_role" "eks_role" {
-#   name = "eks-role"
-
-#   assume_role_policy = jsonencode({
-#     Version = "2012-10-17"
-#     Statement = [
-#       {
-#         Effect = "Allow"
-#         Principal = {
-#           Service = "eks.amazonaws.com"
-#         }
-#         Action = "sts:AssumeRole"
-#       }
-#     ]
-#   })
-# }
-
-# resource "aws_iam_role_policy" "eks_role_policy" {
-#   name   = "eks-role-policy"
-#   role   = aws_iam_role.eks_role.id
-#   policy = jsonencode({
-#     Version = "2012-10-17"
-#     Statement = [
-#       {
-#         Effect = "Allow"
-#         Action = "sts:AssumeRole"
-#         Resource = "*"
-#       }
-#     ]
-#   })
-# }
-
-# resource "aws_iam_role_policy_attachment" "eks_role_attach_policy" {
-#   role       = aws_iam_role.eks_role.name
-#   policy_arn = "arn:aws:iam::aws:policy/AmazonEKSClusterPolicy"
-# }
-
-# resource "aws_eks_access_entry" "eks_user_access_entry" {
-#   cluster_name      = var.cluster_name
-#   principal_arn     = aws_iam_role.eks_role.arn
-# }
-
-# resource "aws_eks_access_policy_association" "eks_user_access_policy_association" {
-#   cluster_name  = var.cluster_name
-#   policy_arn    = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSAdminPolicy"
-#   principal_arn = aws_iam_role.eks_role.arn
-#   access_scope {
-#     type       = "cluster"
-#   }
-# }

@@ -1,4 +1,3 @@
-# Untested! but might work
 provider "helm" {
   kubernetes {
     host                   = var.cluster_endpoint
@@ -25,7 +24,7 @@ resource "helm_release" "argocd" {
     value = "LoadBalancer"
   }
 
-  set {
+  set_sensitive {
     name  = "configs.secret.argocdServerAdminPassword"
     value = var.argocd_admin_password
   }
