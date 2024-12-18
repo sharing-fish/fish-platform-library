@@ -18,8 +18,7 @@
         "release-type": "terraform-module"
       },
       "applications/metrics-server": {
-        "release-type": "simple",
-        "version": "0.7.2"
+        "release-type": "simple"
       }
   },
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
