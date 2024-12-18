@@ -2,23 +2,19 @@
     "packages": {
       "modules/argocd": {
         "release-type": "terraform-module",
-        "draft": "true",
-        "package-name": "argocd"
+        "draft": "true"
       },
       "modules/eks": {
         "release-type": "terraform-module",
-        "draft": "true",
-        "package-name": "eks"
+        "draft": "true"
       },
       "modules/vpc": {
         "release-type": "terraform-module",
-        "draft": "true",
-        "package-name": "vpc"
+        "draft": "true"
       },
       "applications/metrics-server": {
         "release-type": "simple",
-        "draft": "true",
-        "package-name": "metrics-server"        
+        "draft": "true"      
       }
     }
   }
