@@ -8,7 +8,7 @@
       "draft": false,
       "prerelease": false
     },
-  "modules/eks": {
+      "modules/eks": {
         "release-type": "terraform-module"
       },
       "modules/vpc": {
@@ -16,6 +16,10 @@
       },
       "modules/argocd": {
         "release-type": "terraform-module"
+      },
+      "applications/metrics-server": {
+        "release-type": "helm",
+        "version": "0.7.2"
       }
   },
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
