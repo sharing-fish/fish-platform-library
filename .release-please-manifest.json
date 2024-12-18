@@ -3,5 +3,5 @@
   "modules/eks": "0.3.1",
   "modules/vpc": "0.1.0",
   "modules/argocd": "0.3.1",
-  "applications/metrics-server": "0.0.1"
+  "applications/metrics-server": "0.1.0"
 }
