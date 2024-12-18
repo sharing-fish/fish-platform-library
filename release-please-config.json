@@ -1,14 +1,14 @@
 {
     "packages": {
-      "module/argocd": {
+      "modules/argocd": {
         "release-type": "terraform-module",
         "draft": "true"
       },
-      "module/eks": {
+      "modules/eks": {
         "release-type": "terraform-module",
         "draft": "true"
       },
-      "module/vpc": {
+      "modules/vpc": {
         "release-type": "terraform-module",
         "draft": "true"
       },
