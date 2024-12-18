@@ -1,0 +1,16 @@
+{
+    "packages": {
+      "module/argocd": {
+        "draft": "false"
+      },
+      "module/eks": {
+        "draft": "false"
+      },
+      "module/vpc": {
+        "draft": "false"
+      },
+      "applications/metrics_server": {
+        "draft": "false"
+      }
+    }
+  }
