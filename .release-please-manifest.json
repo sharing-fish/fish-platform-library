@@ -1,6 +1,6 @@
 {
-    "modules/eks": "0.1.0",
-    "modules/vpc": "0.1.0",
-    "modules/argocd": "0.1.0",
-    "applications/metrics-server": "1.0.0"
+    "modules/eks": "0.2.0",
+    "modules/vpc": "0.2.0",
+    "modules/argocd": "0.2.0",
+    "applications/metrics-server": "1.1.0"
 }
