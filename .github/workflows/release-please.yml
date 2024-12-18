@@ -31,6 +31,6 @@ jobs:
 
     - uses: googleapis/release-please-action@v4
       with:
-        token: ${{ steps.octo-sts.outputs.token }}
+        #token: ${{ steps.octo-sts.outputs.token }}
         config-file: release-please-config.json
         manifest-file: .release-please-manifest.json
