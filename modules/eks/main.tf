@@ -2,7 +2,7 @@ provider "aws" {
   region = var.region
 }
 
-# the cluster meow
+# the cluster woof
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
 
