@@ -1,1 +1,0 @@
-This is a basic EC2 instance used to test the terragrunt in the deploy repo
