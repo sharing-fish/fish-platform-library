@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/sharing-fish/fish-platform-library/compare/v0.3.0...v0.3.1) (2024-12-18)
+
+
+### Bug Fixes
+
+* argo with default pw ([dab3fd6](https://github.com/sharing-fish/fish-platform-library/commit/dab3fd6b56195fdf1aa9bff28a5cef84ca209ade))
+
 ## [0.3.0](https://github.com/sharing-fish/fish-platform-library/compare/v0.2.1...v0.3.0) (2024-12-17)
 
 
