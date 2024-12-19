@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/sharing-fish/fish-platform-library/compare/metrics-server-v1.0.0...metrics-server-v1.0.1) (2024-12-19)
+
+
+### Bug Fixes
+
+* bumping some versions ([c909cd3](https://github.com/sharing-fish/fish-platform-library/commit/c909cd3da7670b9deccecb5ecad268fab6a5475b))
+
 ## 1.0.0 (2024-12-18)
 
 
