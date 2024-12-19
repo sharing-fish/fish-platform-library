@@ -4,4 +4,5 @@ metadata:
   name: metrics-server
 
 resources:
-  - git::https://github.com/kubernetes-sigs/metrics-server.git//deploy/kubernetes?ref=v0.7.2
+  - https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+
