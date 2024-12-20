@@ -152,7 +152,7 @@ subjects:
   name: aws-load-balancer-controller
   namespace: kube-system
 ---
-# Source: aws-load-balancer-controller/templates/service.yaml
+# Source: aws-load-balancer-controller/templates/service.yaml 
 apiVersion: v1
 kind: Service
 metadata:
