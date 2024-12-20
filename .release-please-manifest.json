@@ -3,6 +3,6 @@
     "modules/vpc": "0.1.0",
     "modules/argocd": "0.1.0",
     "applications/metrics-server": "1.0.1",
-    "applications/external-secrets": "1.0.0",
+    "applications/external-secrets": "1.0.1",
     "applications/aws-load-balancer-controller": "0.0.0"
 }
