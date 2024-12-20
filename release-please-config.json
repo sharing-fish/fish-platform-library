@@ -20,7 +20,7 @@
         "release-type": "simple",
         "package-name": "external-secrets"
       },
-      "aws-load-balancer-controller": {
+      "applications/aws-load-balancer-controller": {
         "release-type": "simple",
         "package-name": "aws-load-balancer-controller"
       }
